@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 # 使い方: ./setup_worker.sh <機能名/エージェント名>
 FEATURE_NAME=$1
 WORKTREE_DIR=".worktrees/feat-${FEATURE_NAME}"
@@ -12,7 +12,7 @@ if [ -z "$FEATURE_NAME" ]; then
 fi
 
 # 1. ワークツリーの作成
-git worktree add -b "$BRANCH_NAME" "$WORKTREE_DIR" main
+git worktree add -b "$BRANCH_NAME" "$WORKTREE_DIR" HEAD
 
 # 2. ワークツリー内固有のGit Authorを設定
 cd "$WORKTREE_DIR" || exit
