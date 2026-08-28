@@ -13,7 +13,9 @@
 | `TICKET-001` | `env-and-wifi` | Agent-Env-and-wifi | 🔄 実装準備中 | `platformio.ini`, `src/config.h`, `src/wifi_manager.*` |
 | `TICKET-002` | `servo-control` | Agent-Servo-control | ⏳ 待機中 | `src/servo_controller.*` |
 | `TICKET-003` | `websocket-client`| Agent-Websocket-client | ⏳ 待機中 | `src/ws_client.*` |
-| `TICKET-004` | `integration` | Agent-Integration | ⏳ 待機中 | `src/main.cpp`, `docs/hardware_spec.md`, `docs/usage_guide.md` |
+| `TICKET-004` | `integration` | Agent-Integration | ✅ 完了 | `src/main.cpp`, `docs/hardware_spec.md`, `docs/usage_guide.md`, `test/test_integration.cpp` |
 
 ## ログ・履歴
 - 2026-08-28: オーケストレーターによりタスクチケット TICKET-001〜TICKET-004 発行。オーケストレーターブランチ `orchestrator/integration` を作成。
+- 2026-08-28: Agent-Integrationにより TICKET-004 実装完了 (`src/main.cpp`, 各種仕様書・ガイド, 統合テスト)。
+
