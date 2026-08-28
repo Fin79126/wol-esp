@@ -1,0 +1,6 @@
+# サブエージェントの作業環境（Worktree本体）
+.worktrees/
+# 一時ビルド成果物やキャッシュ
+dist/
+build/
+node_modules/

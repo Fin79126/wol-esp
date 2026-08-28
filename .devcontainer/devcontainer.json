@@ -1,0 +1,19 @@
+{
+  "name": "Multi-Agent Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Google.google-antigravity"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "antigravity.agent.terminalCommandAutoExecution": "alwaysProceed"
+      }
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup-antigravity.sh",
+  "remoteUser": "vscode"
+}
