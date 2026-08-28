@@ -4,3 +4,7 @@
 dist/
 build/
 node_modules/
+.pio/
+*.o
+*.out
+test_runner
